@@ -5,3 +5,4 @@ print(string)
 
 print(name.lower())
 print(name.upper())
+ 
