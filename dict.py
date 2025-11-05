@@ -11,4 +11,6 @@ person["name"]="lala"
 print(person.keys()) #name, age , role, goal
 print(person.values())# values of keys
 print(person.items())# whole 
-print(person)
+print(person["name"])
+
+
