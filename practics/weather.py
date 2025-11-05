@@ -2,11 +2,12 @@ import requests
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
+import os
 
 from datetime import datetime, timedelta
 today = datetime.now()
 week_ago = today -timedelta(days=7)
+
 
 start_date = week_ago.strftime("%Y-%m-%d")
 end_date = today.strftime("%Y-%m-%d")
@@ -18,6 +19,7 @@ data=response.json()
 print(data)
 
 #____________________using pandas______________________
+#
 daily_data = data['daily']
 print(daily_data)
 df = pd.DataFrame({
@@ -49,5 +51,14 @@ plt.xticks(rotation=45)
 #Automatically adjusts spacing in the figure to make sure labels and titles fit well within the window —
 
 plt.tight_layout()
-plt.savefig('weather-chart.png')
+
+if not os.path.exists('data'):
+    os.makedirs('data')
+plt.savefig('data/weather-chart.png')
 plt.show()
+
+df.to_csv('data/weather-chart.csv',index=False)
+
+
+
+

@@ -1,10 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {},
-	"python.defaultInterpreterPath": "C:\\Users\\suyas\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
-
+    "folders": [
+        {
+            "path": "practics"
+        }
+    ]
 }
