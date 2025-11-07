@@ -9,7 +9,7 @@ df = pd.read_csv('data/sales.csv')
 print(df)
 print(f"\nShape: {df.shape[0]} rows , {df.shape[1]} col")
 
-df['dis_price']= df["price"] +df["price"]*0.10;
+df['dis_price']= df["price"] -df["price"]*0.10;
 
 print(df)
 
