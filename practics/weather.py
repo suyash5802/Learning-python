@@ -38,7 +38,6 @@ plt.plot(df["date"],df["max_temp"], marker='o', label="Max_temp")
 # y axis
 plt.plot(df["date"],df["min_temp"], marker='o', label="Min_temp")
 # name x axis
-
 plt.xlabel("Date")
 #name y axis
 plt.ylabel("Temperature (C)")
@@ -58,6 +57,8 @@ plt.savefig('data/weather-chart.png')
 plt.show()
 
 df.to_csv('data/weather-chart.csv',index=False)
+
+
 
 
 
