@@ -18,6 +18,8 @@ def plot_vectors(vectors,color,label):
     plt.grid(True)
     #Adds horizontal and vertical black lines at x=0 and y=0, representing the coordinate axes.
     plt.axhline(0,color='black',linewidth=1)
+    plt.axvline(0, color='black', linewidth=1)
+
     #Ensures that 1 unit on the X-axis equals 1 unit on the Y-axis (so arrows don’t look stretched).
     plt.gca().set_aspect('equal')
     if not os.path.exists('data'):
