@@ -4,3 +4,4 @@ arr = np.array([[1,2,3],
                   [7,8,9]])
 arr= arr*23
 print(arr[1,1])
+

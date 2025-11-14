@@ -6,6 +6,7 @@ A = np.array([[2, 0],
               [0, 1]])
 
 # Original basis vectors (x and y axes)
+
 v1 = np.array([1, 0])
 v2 = np.array([0, 1])
 
